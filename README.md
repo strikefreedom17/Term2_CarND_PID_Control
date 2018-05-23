@@ -10,6 +10,15 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+
+## Introduction
+In this project, the PID controller is implemented for Autonomous driving mode. The purpose of PID control is for lane tracking and the controller is implemented using c++. The PID control signal is indeed steering angle in this case. After several PID tunings, the optimal PID gains are Kp = 0.2, Ki = 0.0004, and Kd = 2.5. With these PID gains, the vehicle is able to track the lane successfully without going out from the desired path. Note that, the error signal used in PID controller is "cte": cross-track error. 
+
+
+## PID Control
+The PID control consists of proportional control gain (P), integral control gain (I) and derivative control gain (D). In this project, the (Kp, Kd, Ki) represents a set of P,I,D control gains respectively. P gain helps improve faster tracking response (rise time) but it will also introduce larger overshoot. In order to decrese the overshoot, D gain is introduced. However, the steady state error still remains. I control will help decrease steady state error. The Kp gain is tuned first, followed by Kd and Ki respectively. 
+
+
 ## Dependencies
 
 * cmake >= 3.5
