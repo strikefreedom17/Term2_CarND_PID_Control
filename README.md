@@ -24,6 +24,10 @@ The PID control consists of proportional control gain (P), integral control gain
 
 When implement PID control, the control saturation limited is also introduced as well. The tuned optimal PID is stable so that it keeps the vehicle within the track. Failure of PID tuning may cause unstable response which the vehicle cte will grow infinite, meaning the vehicle will finally stay outside the track and unable the keep tracking the desired path.
 
+## Tuning PID Controller
+As mentioned earlier, I tuned the controller manually (trials and errors) starting from Kp, Kd, and Ki respectively. Alternatively, there are other methods for PID tuning as well such as using twiddle (introduced in class lesson), PID gain scheduling, etc. 
+
+
 
 
 ## Dependencies
