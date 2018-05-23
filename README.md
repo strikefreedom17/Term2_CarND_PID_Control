@@ -14,7 +14,7 @@ In this project, the PID controller is implemented for Autonomous driving mode. 
 
 
 ## PID Control
-The PID control consists of proportional control gain (P), integral control gain (I) and derivative control gain (D). In this project, the (Kp, Kd, Ki) represents a set of P,I,D control gains respectively. P gain helps improve faster tracking response (rise time) but it will also introduce larger overshoot. In order to decrese the overshoot, D gain is introduced. However, the steady state error still remains. I control will help decrease steady state error. The Kp gain is tuned first, followed by Kd and Ki respectively. 
+The PID control consists of proportional control gain (P), integral control gain (I) and derivative control gain (D). In this project, the (Kp, Kd, Ki) represents a set of P,I,D control gains respectively. P gain helps improve faster tracking response (rise time) but it will also introduce larger overshoot. In order to decrese the overshoot, D gain is introduced. However, the steady state error still remains. I control will help decrease steady state error. The Kp gain is tuned first, followed by Kd and Ki respectively. When implement PID control, the control saturation limited is also introduced as well. The tuned optimal PID is stable so that it keeps the vehicle within the track. Failure of PID tuning may cause unstable response which the vehicle cte will grow infinite, meaning the vehicle will finally stay outside the track and unable the keep tracking the desired path.
 
 
 
