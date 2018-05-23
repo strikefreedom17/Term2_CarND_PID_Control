@@ -1,5 +1,12 @@
+[image1]: PID.png
+
+
+
 # CarND PID Control
 Self-Driving Car Engineer Nanodegree Program
+
+
+![Autonomous mode running with PID controller][image1] 
 
 ---
 
